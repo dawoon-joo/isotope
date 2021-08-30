@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul, ol, li {
+  list-style: none; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  background: linear-gradient(45deg, black, royalblue); }
+  header h1 {
+    font: bold 50px/1 "orbitron";
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%); }
+    header h1::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 2px;
+      background: #fff;
+      margin-top: 20px; }
+  header p {
+    font: 16px/1 "orbitron";
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(500%); }
+  header .sns {
+    position: absolute;
+    left: 40px;
+    bottom: 100px; }
+    header .sns::after {
+      content: "";
+      display: block;
+      clear: both; }
+    header .sns li {
+      float: left;
+      margin-right: 10px; }
+      header .sns li a {
+        font: 15px/1 "orbitron";
+        color: #fff; }
+        header .sns li a span {
+          font: 12px/1 "arial";
+          color: #fff; }
+
+section {
+  margin-left: 400px;
+  padding: 20px;
+  box-sizing: border-box; }
+  section .filter {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px; }
+    section .filter::after {
+      content: "";
+      display: block;
+      clear: both; }
+    section .filter li {
+      float: left;
+      margin-right: 20px; }
+      section .filter li a {
+        display: block;
+        width: 100px;
+        height: 26px;
+        font: bold 7px/26px "orbitron";
+        background: #fff;
+        color: #aaa;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px; }
+        section .filter li a.on {
+          background: linear-gradient(45deg, black, royalblue);
+          color: #fff;
+          box-shadow: 5px 5px 10px rgba(14, 1, 134, 0.4); }
+  section .wrap {
+    width: 100%; }
+    section .wrap::after {
+      display: block;
+      clear: both;
+      content: ""; }
+    section .wrap article {
+      float: left;
+      width: calc(100% / 6);
+      padding: 10px; }
+      section .wrap article .inner {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px; }
+        section .wrap article .inner img {
+          width: 100%;
+          margin-bottom: 15px; }
+        section .wrap article .inner h2 {
+          font: bold 11px/1 "orbitron";
+          color: #444;
+          margin-bottom: 5px;
+          letter-spacing: 1px; }
+        section .wrap article .inner p {
+          font: 10px/1.2 "orbitron";
+          color: #777; }
+
+@media screen and (max-width: 1599px) {
+  header {
+    width: 350px; }
+    header h1 {
+      font: bold 40px/1 "orbitron";
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%); }
+
+  section {
+    margin-left: 400px;
+    padding: 20px;
+    box-sizing: border-box; }
+    section .wrap article {
+      width: calc(100% / 5); } }
+@media screen and (max-width: 1199px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px; }
+    header h1 {
+      font: bold 24px/1 "arial"; }
+      header h1::after {
+        display: none; }
+    header p {
+      display: none; }
+    header .sns {
+      right: 50px;
+      bottom: 25px;
+      left: auto; }
+
+  section {
+    margin-left: 0px; }
+    section .wrap article {
+      width: calc(100% / 4); } }
+@media screen and (max-width: 899px) {
+  section {
+    margin-left: 0px; }
+    section .wrap article {
+      width: calc(100% / 3); } }
+@media screen and (max-width: 679px) {
+  header .sns li {
+    margin-right: 0;
+    margin-left: 20px; }
+    header .sns li a span {
+      display: none; }
+
+  section {
+    margin-left: 0px; }
+    section .wrap article {
+      width: calc(100% / 2); } }
+@media screen and (max-width: 539px) {
+  header .sns {
+    right: 20px; }
+
+  section {
+    margin-left: 0px; }
+    section .filter li {
+      float: left;
+      width: calc(100% / 3);
+      margin-right: 0px;
+      padding: 0 5px; }
+      section .filter li a {
+        display: block;
+        width: 100%;
+        height: 26px;
+        font: bold 7px/26px "orbitron";
+        background: #fff;
+        color: #aaa;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px; }
+    section .wrap article {
+      width: calc(100% / 1); } }
+
+/*# sourceMappingURL=style.css.map */
